@@ -69,13 +69,4 @@ class PulsarOperacionTest {
 	    });		
 	}
 	
-	@Test 
-	(expected = NumberFormatException.class)
-	void testPulsarOperador2Vece222s(){
-		Calculos ca = new Calculos();
-		ca.pulsarNumero("4.1");
-		ca.pulsarOperacion("+");
-		ca.pulsarOperacion("+");
-			
-	}
 }
