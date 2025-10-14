@@ -60,7 +60,6 @@ class PulsarOperacionTest {
 	 * THEN: Lanza NumberFormatException
 	 */
 	@Test 
-	//(expected = NumberFormatException.class)
 	void testPulsarOperador2Veces() throws NumberFormatException{
 		Calculos ca = new Calculos();
 		ca.pulsarOperacion("+");
