@@ -1,13 +1,22 @@
 package logica.calculos;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;   
 
 import logica.Calculos;
 
 class PulsarPuntoTest {
 
+	
+	private Calculos ca;
+	
+	@BeforeEach
+	void setUp() {
+		ca = new Calculos();
+	}
+	
 	/**
 	 * CASOS:
 	 * 1- Un numero normal sin coma
@@ -23,7 +32,6 @@ class PulsarPuntoTest {
 	 */
 	@Test
 	void testPulsarPuntoNumeroSinComa() {
-		Calculos ca = new Calculos();
 		ca.pulsarNumero("4");
 		ca.pulsarPunto();
 		assertEquals("4.", ca.getNumeroActual());		
@@ -36,7 +44,6 @@ class PulsarPuntoTest {
 	 */
 	@Test
 	void testPulsarPuntoNumeroConComa() {
-		Calculos ca = new Calculos();
 		ca.pulsarNumero("4");
 		ca.pulsarPunto();
 		ca.pulsarPunto();
@@ -50,7 +57,6 @@ class PulsarPuntoTest {
 	 */
 	@Test
 	void testPulsarPuntoPrimerBoton() {
-		Calculos ca = new Calculos();
 		ca.pulsarPunto();
 		assertEquals("0.", ca.getNumeroActual());		
 	}
@@ -62,7 +68,6 @@ class PulsarPuntoTest {
 	 */
 	@Test
 	void testPulsarPuntoPrimerBotonDespuesDeOperador() {
-		Calculos ca = new Calculos();
 		ca.pulsarNumero("4");
 		ca.pulsarOperacion("+");
 		ca.pulsarPunto();
