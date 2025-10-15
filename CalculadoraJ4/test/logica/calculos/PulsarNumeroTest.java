@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import logica.Calculos;
 
-@SuppressWarnings("unused")
 public class PulsarNumeroTest {
 
 	/**
