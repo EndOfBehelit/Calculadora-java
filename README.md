@@ -8,7 +8,7 @@ El segundo proyecto vendría a ser una corrección del primero usando junit4 y e
 
 Este pequeño proyecto en Java se ha diseñado así con el fin de mostrar a los alumnos la importancia de un código y un proyecto legible y limpio.
 
-Centrado en la importancia de una buena estructuración del proyecto, separación de la capa lógica de la interfaz y el uso de test para verificar el funcionamiento de la aplicación.
+Centrado en la importancia de una buena estructuración del proyecto, separación de la capa lógica de la interfaz y el uso de test para verificar el funcionamiento de la aplicación. 
 ---
 
 
